@@ -1,10 +1,14 @@
 import "./App.css";
-import Header from "./component/header/header";
+import Footer from "./component/footer/footer";
+import Socket from "./component/header/header";
+import DoctorsList from "./component/josonDoc/DoctorList";
 
 function App() {
   return (
     <>
-      <Header></Header>
+      <Socket></Socket>
+      <DoctorsList></DoctorsList>
+      <Footer></Footer>
     </>
   );
 }
