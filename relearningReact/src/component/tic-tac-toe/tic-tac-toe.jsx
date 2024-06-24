@@ -1,12 +1,11 @@
 import { useState } from "react";
-import "./App.css";
+import "../../App.css";
 
 function Square({ value, onSquareClick }) {
   console.log(value);
   return (
     <button className="square" onClick={onSquareClick}>
       {value}
-      {}
     </button>
   );
 }
