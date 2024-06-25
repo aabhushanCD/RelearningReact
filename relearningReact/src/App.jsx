@@ -1,13 +1,14 @@
-import Video from "./component/VideosList/video";
-import Game from "./component/tic-tac-toe/tic-tac-toe";
+import React from "react";
+
 import "./App.css";
+import ResponsiveAppBar from "./component/header/header";
+
 function App() {
   return (
     <>
-      {/* <Video></Video>; */}
-      
-      <Game></Game>
+      <ResponsiveAppBar />
     </>
   );
 }
+
 export default App;

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "../../App.css";
-
+import ResponsiveAppBar from "../header/header";
+import Footer from "../footer/footer";
 function Square({ value, onSquareClick }) {
-  console.log(value);
   return (
     <button className="square" onClick={onSquareClick}>
       {value}
@@ -85,14 +85,23 @@ export default function Game() {
   });
 
   return (
-    <div className="game">
-      <div className="game-board">
-        <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
-      </div>
-      {/* <div className="game-info">
+    <>
+      {" "}
+      <ResponsiveAppBar />
+      <div className="game">
+        <div className="game-board">
+          <Board
+            xIsNext={xIsNext}
+            squares={currentSquares}
+            onPlay={handlePlay}
+          />
+        </div>
+        {/* <div className="game-info">
         <ol>{moves}</ol>
       </div> */}
-    </div>
+      </div>
+      <Footer></Footer>
+    </>
   );
 }
 

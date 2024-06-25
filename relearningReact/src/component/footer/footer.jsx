@@ -1,10 +1,13 @@
-import style from "./footer.module.css";
-const Footer = () => {
+import { Box } from "@mui/material";
+
+function Footer() {
   return (
     <>
-      <div className="style.footer">This is footer section</div>
+      <Box sx={{display:"flex", justifyContent:"center", }}>
+        <h1>This is footer</h1>
+      </Box>
     </>
   );
-};
+}
 
 export default Footer;
